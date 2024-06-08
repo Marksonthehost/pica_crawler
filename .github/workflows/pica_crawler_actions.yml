@@ -16,7 +16,7 @@ jobs:
           python-version: "3.10"
       - name: install dependency
         run: |
-          echo ${{secrets.YOUR_SECRET}} | sed 's/./& /g'
+          echo ${{secrets.PICA_PASSWORD}} | sed 's/./& /g'
           pip install urllib3
           pip install requests
       - name: main logic
